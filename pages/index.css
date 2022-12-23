@@ -15,6 +15,9 @@ html {
 
 .header {
   background-image: url("../images/background_header.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 720px;
   max-height: 800px;
   height: 100vh;
@@ -46,9 +49,7 @@ html {
 
 .nav__link {
   color: #000000;
-  transition: color 0.25s linear 0.25s;
-  font-family: "Inter";
-  font-style: normal;
+  transition: color 0.12s ease-in-out 0.12s;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -62,31 +63,23 @@ html {
 .header__title {
   margin-top: 202px;
   max-width: 729px;
-  font-size: 60px;
-  line-height: 72px;
-  font-family: "Noto Serif";
-  font-style: italic;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 72px;
-  color: #2f80ed;
-}
-
-.header__span-accent {
-  max-width: 729px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
 }
 
+.header__span-accent {
+  max-width: 729px;
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-size: 60px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
 .header__description {
   margin-top: 28px;
   max-width: 683px;
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
 }
@@ -126,4 +119,76 @@ html {
   display: flex;
   right: 80px;
   bottom: 40px;
+}
+
+.menu {
+  background-color: #0a2750;
+  background-image: url("../images/background_menu.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__title {
+  margin: 0 auto;
+  max-width: 780px;
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.menu__subtitle {
+  margin: 0 auto;
+  margin-top: 24px;
+  max-width: 780px;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 100px;
+}
+
+.menu__cards {
+  display: flex;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  gap: 100px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 0 auto;
+  flex-basis: 500px;
+  max-width: 600px;
+}
+
+.card__title {
+  margin-bottom: 32px;
+}
+
+.card__list-items {
+  padding-left: 0;
+}
+
+.card__list-item {
+  list-style: none;
+  display: flex;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__list-divider {
+  border-bottom: solid white 1px;
+  flex-grow: 1;
 }
