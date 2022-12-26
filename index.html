@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Cameron Coleman" content="coffee shop mockup" />
-    <link rel="stylesheet" href="../pages/index.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" type="image/x-icon" href="../favicon_coffee_bean.ico" />
     <title>Document</title>
   </head>
@@ -136,25 +136,95 @@
         </div>
       </div>
 
-      <div class="recipes">
-        <div class="main__recipes_title">
-          <h2>Recipes</h2>
-        </div>
-        <div class="main__recipes_paragraph">
-          <p>
-            Check out some recipes we've collected for your home-brewing
-            convenience:
-          </p>
-        </div>
-        <div class="main__recipes_videos">
-          <!-- 
-            VIDEO 1
-            VIDEO 2
-            -->
+      <div class="main__recipes_videos">
+        <h2 class="recipes__title">Recipes</h2>
+        <p class="recipes__subtitle">
+          Check out some recipes we've collected for your home-brewing
+          convenience:
+        </p>
+        <div class="recipes__videos">
+          <figure>
+            <iframe
+              class="recipes__iframe"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/j6VlT_jUVPc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <figcaption class="video__caption">
+              Aeropress recipe
+              <div></div>
+              ~5 min
+            </figcaption>
+          </figure>
+          <figure>
+            <iframe
+              class="recipes__iframe"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/st571DYYTR8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <figcaption class="video__caption">
+              French press recipe
+              <div></div>
+              ~15 min
+            </figcaption>
+          </figure>
         </div>
       </div>
 
-      <div class="reservation"></div>
+      <div class="reservation">
+        <div class="reservation__wrapper">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form">
+            <label for="name" class="form__label"
+              >Name *
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                placeholder="Name Surname"
+            /></label>
+            <label for="number" class="form__label"
+              >Number of guests *
+              <input
+                class="form__input"
+                type="number"
+                id="number"
+                placeholder="1-8"
+            /></label>
+            <label for="date" class="form__label"
+              >Date & time *
+              <input class="form__input" type="datetime-local" id="date"
+            /></label>
+            <label for="email" class="form__label"
+              >Your email *
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                placeholder="email@email.com"
+            /></label>
+            <input
+              type="submit"
+              id="book"
+              value="Book a table"
+              class="form__button"
+            /><label for="book"></label>
+            <label for="checkbox" class="form__label form__label_checkbox"
+              ><input type="checkbox" id="checkbox" class="form__checkbox" />I
+              agree with the terms of use</label
+            >
+          </form>
+        </div>
+      </div>
       <div class="about"></div>
       <footer class="footer"></footer>
     </div>

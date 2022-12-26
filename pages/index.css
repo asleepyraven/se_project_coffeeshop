@@ -152,18 +152,18 @@ html {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .menu__cards {
   display: flex;
-  max-width: 1300px;
   flex-wrap: wrap;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
   gap: 100px;
   margin-bottom: 100px;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .card {
@@ -191,4 +191,137 @@ html {
 .card__list-divider {
   border-bottom: solid white 1px;
   flex-grow: 1;
+}
+
+.main__recipes_videos {
+  background-image: url("../images/background_recipes.svg");
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recipes__title {
+  max-width: 580px;
+  margin-top: 100px;
+  margin-left: 80px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.recipes__subtitle {
+  max-width: 438px;
+  margin-left: 80px;
+  margin-bottom: 80px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.recipes__videos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.recipes__iframe {
+  height: 273px;
+  width: 480px;
+}
+
+.video__caption {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 215px;
+}
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url("/images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation__wrapper {
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation__title {
+  position: relative;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservation__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 385px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  gap: 32px;
+  margin-top: 80px;
+  width: 380px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+}
+
+.form__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #2f80ed;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 100%;
+  transition: opacity 0.15s ease-in 0.15s;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+input {
+  height: 60px;
+  border-radius: 4px;
+}
+
+.form__checkbox {
+  height: 20px;
+  width: 20px;
+}
+
+.form__label_checkbox {
+  display: flexbox;
+}
+
+.form__checkbox:checked {
+  background: red;
 }
