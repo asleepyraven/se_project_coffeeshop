@@ -12,16 +12,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Cameron Coleman" content="coffee shop mockup" />
     <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./blocks/nav.css" />
+    <link rel="stylesheet" href="./blocks/header.css" />
+    <link rel="stylesheet" href="./blocks/menu.css" />
+    <link rel="stylesheet" href="./blocks/recipes.css" />
+    <link rel="stylesheet" href="./blocks/reservation.css" />
+    <link rel="stylesheet" href="./blocks/about.css" />
+    <link rel="stylesheet" href="./blocks/footer.css" />
     <link rel="icon" type="image/x-icon" href="../favicon_coffee_bean.ico" />
     <title>Document</title>
   </head>
 
   <body>
     <div class="page">
-      <header class="header">
-        <nav class="nav">
+      <div class="header">
+        <div class="nav">
           <img
-            class="logo"
+            class="nav__logo"
             alt="coffee logo"
             src="images/logo_coffee_shop.svg"
           />
@@ -31,7 +38,7 @@
             <a class="nav__link" href="#booktable">Book a table</a>
             <a class="nav__link" href="#contacts">Contacts</a>
           </div>
-        </nav>
+        </div>
 
         <h1 class="header__title">
           <span class="header__span-accent"> Specialty coffee</span>
@@ -57,7 +64,7 @@
             200 Success Avenue, The Town of Practicum
           </p>
         </div>
-      </header>
+      </div>
 
       <div class="menu">
         <h2 class="menu__title">Menu</h2>
@@ -144,7 +151,7 @@
         </div>
       </div>
 
-      <div class="main__recipes_videos">
+      <div class="recipes">
         <h2 class="recipes__title">Recipes</h2>
         <p class="recipes__subtitle">
           Check out some recipes we've collected for your home-brewing
@@ -253,7 +260,7 @@
           </p>
         </div>
       </div>
-      <footer class="footer">
+      <div class="footer">
         <div class="footer__content">
           <img
             class="footer__logo"
@@ -283,7 +290,7 @@
           </div>
         </div>
         <div class="footer__copyright">&copy; 2022 Cameron Coleman</div>
-      </footer>
+      </div>
     </div>
   </body>
 </html>
