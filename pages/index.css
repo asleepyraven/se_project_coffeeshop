@@ -58,7 +58,6 @@ nav {
 .nav__links {
   list-style: none;
   padding-left: 0;
-  margin-top: 0;
   margin-bottom: 0;
   display: flex;
   column-gap: 20px;
@@ -352,14 +351,13 @@ input {
 
 .form__checkbox:checked {
   accent-color: #2f80ed;
-  background-image: url("/images/check.svg");
+  background-image: url("./images/check.svg");
 }
 
 .about {
   background-color: #0a2750;
   color: #fff;
   display: flex;
-  justify-content: flex-end;
   overflow: hidden;
   position: relative;
   justify-content: space-between;
@@ -463,7 +461,6 @@ input {
 }
 
 .footer__list-item {
-  display: flex;
   position: relative;
   top: 20px;
   display: flex;
