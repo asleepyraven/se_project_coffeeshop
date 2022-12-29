@@ -12,60 +12,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Cameron Coleman" content="coffee shop mockup" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./blocks/nav.css" />
-    <link rel="stylesheet" href="./blocks/header.css" />
-    <link rel="stylesheet" href="./blocks/menu.css" />
-    <link rel="stylesheet" href="./blocks/recipes.css" />
-    <link rel="stylesheet" href="./blocks/reservation.css" />
-    <link rel="stylesheet" href="./blocks/about.css" />
-    <link rel="stylesheet" href="./blocks/footer.css" />
     <link rel="icon" type="image/x-icon" href="../favicon_coffee_bean.ico" />
     <title>Document</title>
   </head>
 
-  <body>
-    <div class="page">
-      <header class="header">
-        <div class="nav">
-          <img
-            class="nav__logo"
-            alt="coffee logo"
-            src="images/logo_coffee_shop.svg"
-          />
-          <div class="nav__links">
-            <a class="nav__link" href="#menu">Menu</a>
-            <a class="nav__link" href="#recipes">Recipes</a>
-            <a class="nav__link" href="#booktable">Book a table</a>
-            <a class="nav__link" href="#contacts">Contacts</a>
-          </div>
-        </div>
-
-        <h1 class="header__title">
-          <span class="header__span-accent"> Specialty coffee</span>
-          in the Practicum Library
-        </h1>
-        <p class="header__description">
-          Welcome to our study zone! We've got the coffee to energize you and
-          the cozy vibes to help you get creative.
-        </p>
+  <body class="page">
+    <header class="header">
+      <nav class="nav">
         <img
-          class="header__image"
-          alt="inside coffee shop"
-          src="images/inside_coffee_shop.png"
+          class="nav__logo"
+          alt="coffee logo"
+          src="images/logo_coffee_shop.svg"
         />
-        <div class="header__footer">
-          <div class="header__footer_hours">
-            <p class="header__paragraph">Hours:</p>
-            <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
-            <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
-          </div>
-          <p class="header__paragraph">
-            200 Success Avenue, The Town of Practicum
-          </p>
+        <div class="nav__links">
+          <a class="nav__link" href="#menu">Menu</a>
+          <a class="nav__link" href="#recipes">Recipes</a>
+          <a class="nav__link" href="#booktable">Book a table</a>
+          <a class="nav__link" href="#contacts">Contacts</a>
         </div>
-      </header>
+      </nav>
 
-      <main class="menu">
+      <h1 class="header__title">
+        <span class="header__span-accent"> Specialty coffee</span>
+        in the Practicum Library
+      </h1>
+      <p class="header__description">
+        Welcome to our study zone! We've got the coffee to energize you and the
+        cozy vibes to help you get creative.
+      </p>
+      <img
+        class="header__image"
+        alt="inside coffee shop"
+        src="images/inside_coffee_shop.png"
+      />
+      <div class="header__footer">
+        <div class="header__footer_hours">
+          <p class="header__paragraph">Hours:</p>
+          <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
+          <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
+        </div>
+        <p class="header__paragraph">
+          200 Success Avenue, The Town of Practicum
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu">
         <h2 class="menu__title">Menu</h2>
         <div class="menu__subtitle">
           <p>
@@ -192,52 +185,50 @@
         </section>
 
         <section class="reservation">
-          <div class="reservation__wrapper">
-            <h2 class="reservation__title">Book a table</h2>
-            <form class="reservation__form">
-              <label for="name" class="form__label"
-                >Name *
-                <input
-                  class="form__input"
-                  type="text"
-                  id="name"
-                  placeholder="Name Surname"
-              /></label>
-              <label for="number" class="form__label"
-                >Number of guests *
-                <input
-                  class="form__input"
-                  type="number"
-                  id="number"
-                  placeholder="1-8"
-                  min="0"
-                  max="8"
-              /></label>
-              <label for="date" class="form__label"
-                >Date & time *
-                <input class="form__input" type="datetime-local" id="date"
-              /></label>
-              <label for="email" class="form__label"
-                >Your email *
-                <input
-                  class="form__input"
-                  type="email"
-                  id="email"
-                  placeholder="email@email.com"
-              /></label>
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form">
+            <label for="name" class="form__label"
+              >Name *
               <input
-                type="submit"
-                id="book"
-                value="Book a table"
-                class="form__button"
-              /><label for="book"></label>
+                class="form__input"
+                type="text"
+                id="name"
+                placeholder="Name Surname"
+            /></label>
+            <label for="number" class="form__label"
+              >Number of guests *
+              <input
+                class="form__input"
+                type="number"
+                id="number"
+                placeholder="1-8"
+                min="0"
+                max="8"
+            /></label>
+            <label for="date" class="form__label"
+              >Date & time *
+              <input class="form__input" type="datetime-local" id="date"
+            /></label>
+            <label for="email" class="form__label"
+              >Your email *
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                placeholder="email@email.com"
+            /></label>
+            <input
+              type="submit"
+              id="book"
+              value="Book a table"
+              class="form__button"
+            /><label for="book"></label>
 
-              <label for="checkbox" class="form__label form__label_checkbox"
-                ><input type="checkbox" id="checkbox" class="form__checkbox" />I
-                agree with the terms of use</label
-              >
-            </form>
-          </div>
+            <label for="checkbox" class="form__label form__label_checkbox"
+              ><input type="checkbox" id="checkbox" class="form__checkbox" />I
+              agree with the terms of use</label
+            >
+          </form>
         </section>
 
         <section class="about">
@@ -259,39 +250,39 @@
             </p>
           </div>
         </section>
-      </main>
+      </section>
+    </main>
 
-      <footer class="footer">
-        <div class="footer__content">
-          <img
-            class="footer__logo"
-            alt="practicum logo"
-            src="images/practicum_logo.svg"
-          />
-          <div class="footer__social__wrapper">
-            <div class="footer__social-heading">Social media</div>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <img
-                  alt="facebook icon"
-                  class="footer__social-icon"
-                  src="images/facebook_white.svg"
-                />
-                <a href="#" class="footer__social-link">Facebook</a>
-              </li>
-              <li class="footer__list-item">
-                <img
-                  alt="instagram icon"
-                  class="footer__social-icon"
-                  src="images/instagram_white.svg"
-                />
-                <a href="#" class="footer__social-link">Instagram</a>
-              </li>
-            </ul>
-          </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <img
+          class="footer__logo"
+          alt="practicum logo"
+          src="images/practicum_logo.svg"
+        />
+        <div class="footer__social__wrapper">
+          <div class="footer__social-heading">Social media</div>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <img
+                alt="facebook icon"
+                class="footer__social-icon"
+                src="images/facebook_white.svg"
+              />
+              <a href="#" class="footer__social-link">Facebook</a>
+            </li>
+            <li class="footer__list-item">
+              <img
+                alt="instagram icon"
+                class="footer__social-icon"
+                src="images/instagram_white.svg"
+              />
+              <a href="#" class="footer__social-link">Instagram</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer__copyright">&copy; 2022 Cameron Coleman</div>
-      </footer>
-    </div>
+      </div>
+      <div class="footer__copyright">&copy; 2022 Cameron Coleman</div>
+    </footer>
   </body>
 </html>
