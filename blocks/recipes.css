@@ -1,9 +1,10 @@
-.main__recipes_videos {
+.recipes {
   background-image: url("../images/background_recipes.svg");
   background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  color: #000;
 }
 
 .recipes__title {
