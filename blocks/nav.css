@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .nav__logo {
@@ -12,15 +12,13 @@
 }
 
 .nav__links {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
   display: flex;
   column-gap: 20px;
   position: relative;
   justify-content: flex-end;
-  margin-top: 30px;
-  margin-right: 80px;
+  top: 30px;
 }
 
 .nav__link {

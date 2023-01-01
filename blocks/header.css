@@ -8,7 +8,7 @@
   height: 100vh;
   padding: 30px 80px 40px;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .header__title {
@@ -17,15 +17,18 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
+  margin-bottom: 0;
+  z-index: 2;
 }
 
 .header__span-accent {
   max-width: 729px;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: italic;
   font-size: 60px;
   line-height: 72px;
   color: #2f80ed;
+  z-index: 2;
 }
 
 .header__description {
@@ -33,6 +36,8 @@
   max-width: 683px;
   font-size: 20px;
   line-height: 30px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  z-index: 2;
 }
 
 .header__image {
@@ -59,15 +64,5 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-}
-
-.header__footer_hours {
-  left: 80px;
-  bottom: 40px;
-}
-
-.header__footer_address {
-  display: flex;
-  right: 80px;
-  bottom: 40px;
+  z-index: 2;
 }
