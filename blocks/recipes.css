@@ -17,7 +17,6 @@
   line-height: 52px;
 }
 
-
 .recipes__subtitle {
   font-family: "Noto Serif", "Times New Roman", serif;
   max-width: 438px;
@@ -34,17 +33,12 @@
   justify-content: center;
 }
 
-.recipes__videos__figure {
+.recipes__videos-figure {
   margin: 0;
 }
 
 .recipes__iframe {
   border: 0;
-  width=560px;
-  height=315px;
-}
-
-.recipes__iframe {
   height: 273px;
   width: 480px;
 }
@@ -56,4 +50,5 @@
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 215px;
+  margin-top: 24px;
 }

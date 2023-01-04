@@ -49,8 +49,6 @@
 }
 
 .footer__list-item {
-  position: relative;
-  top: 20px;
   display: flex;
   align-items: center;
 }
@@ -69,6 +67,7 @@
 
 .footer__list-item:first-of-type {
   padding-bottom: 16px;
+  padding-top: 20px;
 }
 
 .footer__copyright {
@@ -77,4 +76,5 @@
   margin-top: 108px;
   padding-bottom: 60px;
   padding-left: 80px;
+  margin-bottom: 0;
 }

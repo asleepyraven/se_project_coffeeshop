@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Cameron Coleman" content="coffee shop mockup" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Practicum Coffee</title>
   </head>
 
   <body class="page">
@@ -47,7 +47,9 @@
           <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
           <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
         </div>
-        <p>200 Success Avenue, The Town of Practicum</p>
+        <p class="header__paragraph">
+          200 Success Avenue, The Town of Practicum
+        </p>
       </div>
     </header>
 
@@ -128,112 +130,112 @@
             </ul>
           </div>
         </section>
+      </section>
 
-        <section class="recipes" id="recipes">
-          <h2 class="recipes__title">Recipes</h2>
-          <p class="recipes__subtitle">
-            Check out some recipes we've collected for your home-brewing
-            convenience:
+      <section class="recipes" id="recipes">
+        <h2 class="recipes__title">Recipes</h2>
+        <p class="recipes__subtitle">
+          Check out some recipes we've collected for your home-brewing
+          convenience:
+        </p>
+        <div class="recipes__videos">
+          <figure class="recipes__videos-figure">
+            <iframe
+              class="recipes__iframe"
+              src="https://www.youtube.com/embed/j6VlT_jUVPc"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <figcaption class="recipes__video-caption">
+              Aeropress recipe
+              <div></div>
+              ~5 min
+            </figcaption>
+          </figure>
+          <figure class="recipes__videos-figure">
+            <iframe
+              class="recipes__iframe"
+              src="https://www.youtube.com/embed/st571DYYTR8"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <figcaption class="recipes__video-caption">
+              French press recipe
+              <div></div>
+              ~15 min
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="reservation" id="booktable">
+        <h2 class="reservation__title">Book a table</h2>
+        <form class="reservation__form form">
+          <fieldset class="form__fieldset">
+            <label for="name" class="form__label"
+              >Name *
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                placeholder="Name Surname"
+            /></label>
+            <label for="number" class="form__label"
+              >Number of guests *
+              <input
+                class="form__input"
+                type="number"
+                id="number"
+                placeholder="1-8"
+                min="0"
+                max="8"
+            /></label>
+            <label for="date" class="form__label"
+              >Date & time *
+              <input class="form__input" type="datetime-local" id="date"
+            /></label>
+            <label for="email" class="form__label"
+              >Your email *
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                placeholder="email@email.com"
+            /></label>
+          </fieldset>
+          <input
+            type="submit"
+            id="book"
+            value="Book a table"
+            class="form__button"
+          /><label for="book"></label>
+          <label for="checkbox" class="form__label form__label-checkbox"
+            ><input type="checkbox" id="checkbox" class="form__checkbox" />I
+            agree with the terms of use</label
+          >
+        </form>
+      </section>
+
+      <section class="about">
+        <div class="about__circle"></div>
+        <div class="about__circle about__circle_animation_blurred"></div>
+        <h2 class="about__title">About the coffee shop</h2>
+        <div class="about__content">
+          <p class="about__paragraph">
+            Our coffee shop if located in the Practium Library's Hall. It
+            features 6 tables and free WiFi.
           </p>
-          <div class="recipes__videos">
-            <figure class="recipes__videos__figure">
-              <iframe
-                class="recipes__iframe"
-                src="https://www.youtube.com/embed/j6VlT_jUVPc"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <figcaption class="recipes__video-caption">
-                Aeropress recipe
-                <div></div>
-                ~5 min
-              </figcaption>
-            </figure>
-            <figure class="recipes__videos__figure">
-              <iframe
-                class="recipes__iframe"
-                src="https://www.youtube.com/embed/st571DYYTR8"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <figcaption class="recipes__video-caption">
-                French press recipe
-                <div></div>
-                ~15 min
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="reservation" id="booktable">
-          <h2 class="reservation__title">Book a table</h2>
-          <form class="reservation__form form">
-            <fieldset class="form__fieldset">
-              <label for="name" class="form__label"
-                >Name *
-                <input
-                  class="form__input"
-                  type="text"
-                  id="name"
-                  placeholder="Name Surname"
-              /></label>
-              <label for="number" class="form__label"
-                >Number of guests *
-                <input
-                  class="form__input"
-                  type="number"
-                  id="number"
-                  placeholder="1-8"
-                  min="0"
-                  max="8"
-              /></label>
-              <label for="date" class="form__label"
-                >Date & time *
-                <input class="form__input" type="datetime-local" id="date"
-              /></label>
-              <label for="email" class="form__label"
-                >Your email *
-                <input
-                  class="form__input"
-                  type="email"
-                  id="email"
-                  placeholder="email@email.com"
-              /></label>
-            </fieldset>
-            <input
-              type="submit"
-              id="book"
-              value="Book a table"
-              class="form__button"
-            /><label for="book"></label>
-            <label for="checkbox" class="form__label form__label__checkbox"
-              ><input type="checkbox" id="checkbox" class="form__checkbox" />I
-              agree with the terms of use</label
-            >
-          </form>
-        </section>
-
-        <section class="about">
-          <div class="about__circle"></div>
-          <div class="about__circle about__circle_animation_blurred"></div>
-          <h2 class="about__title">About the coffee shop</h2>
-          <div class="about__content">
-            <p class="about__paragraph">
-              Our coffee shop if located in the Practium Library's Hall. It
-              features 6 tables and free WiFi.
-            </p>
-            <p class="about__paragraph">
-              Our main mission is keeping guests cozy and energized.
-            </p>
-            <p class="about__paragraph">
-              Besides that, we try to reduce our environmental impact -- so we
-              don't sell single-use cups. But you can buy one of our reusable
-              cups!
-            </p>
-          </div>
-        </section>
+          <p class="about__paragraph">
+            Our main mission is keeping guests cozy and energized.
+          </p>
+          <p class="about__paragraph">
+            Besides that, we try to reduce our environmental impact -- so we
+            don't sell single-use cups. But you can buy one of our reusable
+            cups!
+          </p>
+        </div>
       </section>
     </main>
 
@@ -245,7 +247,7 @@
           src="images/practicum_logo.svg"
         />
         <div class="footer__social-wrapper">
-          <h5 class="footer__social-heading">Social media</h5>
+          <h2 class="footer__social-heading">Social media</h2>
           <ul class="footer__list">
             <li class="footer__list-item">
               <img

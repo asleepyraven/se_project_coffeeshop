@@ -5,7 +5,7 @@
   flex-direction: column;
   color: #000;
   background-color: #d9e7ff;
-  background-image: url("/images/background_reservation.svg");
+  background-image: url("../images/background_reservation.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -21,8 +21,8 @@
 }
 
 .reservation__form {
-  width: 380px;
   max-width: 385px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 120px;
 }

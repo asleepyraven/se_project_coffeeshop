@@ -5,9 +5,10 @@
 }
 
 .card__title {
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
   margin-bottom: 32px;
 }
 
@@ -16,9 +17,15 @@
   margin: 0;
 }
 
+.card__list-item:last-child {
+  margin-bottom: 0;
+}
+
 .card__list-item {
   list-style: none;
   display: flex;
+  font-style: normal;
+  font-weight: normal;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 20px;
